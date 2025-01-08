@@ -13,6 +13,12 @@ public class Converter {
         }
         else{
             System.out.println(time);
+            String timeParts [] = time.split(":");
+            int hours = Integer.parseInt(timeParts[0]);
+            int minutes = Integer.parseInt(timeParts[1]);
+
+            System.out.println(hours);
+            System.out.println(minutes);
             input.close();
         }
     }
